@@ -5,9 +5,15 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -17,9 +23,8 @@ jobs:
         with:
           node-version: 18
 
-- name: Install dependencies (ignoring peer deps)
-  run: npm install --legacy-peer-deps
-
+      - name: Install dependencies (ignoring peer deps)
+        run: npm install --legacy-peer-deps
 
       - name: Build project
         run: npm run build
