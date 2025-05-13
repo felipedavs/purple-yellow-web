@@ -20,3 +20,8 @@ export default defineConfig(({ mode }) => ({
     },
   },
 }));
+
+export default defineConfig({
+  base: '/purple-yellow-web/', // nome do repositório com barra
+  ...
+});
