@@ -23,8 +23,8 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install dependencies (FORÇADO)
-        run: npm install --force
+      - name: Force install dependencies
+        run: npm install --legacy-peer-deps
 
       - name: Build project
         run: npm run build
