@@ -23,8 +23,8 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install dependencies (ignoring peer deps)
-        run: npm install --legacy-peer-deps
+      - name: Install dependencies (force mode)
+  run: npm install --force
 
       - name: Build project
         run: npm run build
