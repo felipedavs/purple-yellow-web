@@ -17,8 +17,9 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install dependencies
-        run: npm install
+    - name: Install dependencies (ignoring peer deps)
+  run: npm install --legacy-peer-deps
+
 
       - name: Build project
         run: npm run build
