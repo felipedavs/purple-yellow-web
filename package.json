@@ -14,7 +14,8 @@
     "@radix-ui/react-toast": "^1.2.13",
     "next-themes": "^0.2.0",
     "sonner": "^1.0.0",
-    "lucide-react": "^0.321.0"
+    "lucide-react": "^0.321.0",
+    "class-variance-authority": "^0.7.0"
   },
   "devDependencies": {
     "vite": "^5.0.0",
