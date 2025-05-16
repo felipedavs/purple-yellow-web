@@ -1,10 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-
 const HeroSection = () => {
-  return (
-    <section className="relative bg-gradient-to-r from-primary/95 to-primary min-h-screen flex items-center text-white pt-16">
+  return <section className="relative bg-gradient-to-r from-primary/95 to-primary min-h-screen flex items-center text-white pt-16">
       <div className="absolute inset-0 bg-[url('/hero-pattern.svg')] opacity-10"></div>
       <div className="container mx-auto px-4 z-10">
         <div className="flex flex-col md:flex-row items-center">
@@ -31,17 +28,11 @@ const HeroSection = () => {
           <div className="md:w-1/2 flex justify-center animate-fade-in">
             <div className="relative">
               <div className="absolute -inset-4 rounded-full bg-accent/30 blur-xl"></div>
-              <img
-                src="/hero-image.png" 
-                alt="Marketing Digital"
-                className="relative z-10 rounded-lg shadow-2xl max-w-md md:max-w-lg"
-              />
+              <img alt="Marketing Digital" src="/lovable-uploads/8863fce0-d733-4a19-a4bc-a43f325e4254.jpg" className="relative z-12 rounded-lg shadow-3xl max-w-md md:max-w-lg object-cover" />
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
